@@ -1,0 +1,81 @@
+#-----------------------------------------
+#
+#         Announcement 公告|广播
+#          -=  by: CanYing  =-
+#
+#-----------------------------------------
+Broadcast:
+  # 启用广播 true 开启 | false 关闭
+  Enable: true
+  # 广播前缀 可使用 & 作为颜色字符
+  Prefix: '&8[&c广播&8] &f'
+  # 可以改但没必要 部分显示给管理和玩家
+  WrongCommand: "&c语法错误: /com Broadcast [信息]"
+  NoPermission: "&c你没有权限使用"
+  Disable: "&c该功能关闭,需要手动开启"
+BroadcastTitle:
+  # 启用标题广播 true 开启 | false 关闭
+  Enable: true
+  # 可以改但没必要 部分显示给管理和玩家
+  WrongCommand: "&c语法错误: /com BroadcastTitle [信息]"
+  NoPermission: "&c你没有权限使用"
+  Disable: "&c该功能关闭,需要手动开启"
+Announcement:
+  test01:
+    # 自动广播 true 开启 | false 关闭
+    Enable: false
+    # 自动广播前缀 可使用 & 作为颜色字符
+    Prefix: '&8[&e公告&8] &f'
+    # 公告信息
+    Message:
+      - "测试一条"
+    # 延迟 单位:秒
+    Delay: 5
+    # 随机信息 只能是Message内一条
+    Random: false
+  test02:
+    Enable: false
+    Prefix: '&8[&e公告&8] '
+    Message:
+      - "1"
+      - "2"
+      - "3"
+    Delay: 5
+    Random: true
+# test3:
+# 可以继续创建公告!
+AnnouncementTitle:
+  # 自动标题广播 true 开启 | false 关闭
+  Enable: false
+  # 主标题和副标题
+  title: ""
+  subtitle: ""
+  delay: 120
+  # 延迟 单位: 秒
+JoinServerTitle:
+  # 进服标题 true 开启 | false 关闭
+  # 自带变量 [p] 玩家名称
+  Enable: false #开启
+  title: "欢迎[p]加入服务器"
+  subtitle: "副标题"
+JoinServerMessage:
+  # 进服广播 true 开启 | false 关闭
+  # 自带变量 [p] 玩家名称
+  Enable: true #开启
+  Message:
+    - "| -------- |"
+    - "欢迎加入服务器"
+    - "| -------- |"
+Reload: "&a插件已重载"
+Prefix: "&8[&aAnnouncement&8] "
+NoPermission: "&c你没有权限使用"
+Help:
+  # help 菜单 游戏内显示
+  - "&7&n          &8&n          &7&n          &8&n          &7&n          "
+  - ""
+  - "              &a Announcement      "
+  - "                 &7&o 简单的公告"
+  - " /amt Broadcast [信息] 发送聊天广播"
+  - " /amt BroadcastTitle [信息] 发送标题广播"
+  - " /amt reload 重载插件"
+  - "&7&n          &8&n          &7&n          &8&n          &7&n          "

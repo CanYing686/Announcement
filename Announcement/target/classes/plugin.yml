@@ -1,0 +1,33 @@
+name: Announcement
+version: 1.0
+main: com.announcement.announcement.Announcement
+api-version: 1.13
+authors: [ CanYing ]
+softdepend: [PlaceholderAPI]
+description: "一款自定义公告系统"
+commands:
+  Announcement:
+    aliases:
+      - amt
+    description: "公告"
+permissions:
+  Announcement.Admin:
+    default: op
+    description: "主权限组"
+    children:
+      Announcement.Broadcast: true
+      Announcement.BroadcastTitle: true
+      Announcement.reload: true
+      Announcement.tab: true
+  Announcement.Broadcast:
+    description: "广播"
+    default: op
+  Announcement.BroadcastTitle:
+    description: "标题"
+    default: op
+  Announcement.reload:
+    description: "重载插件"
+    default: op
+  Announcement.tab:
+    description: "tab补全"
+    default: op
